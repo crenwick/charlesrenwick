@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+**/*.sw?
+db
+build
+**/*bundle.js
+bower_components
+.sass-cache
+.DS_store
+test/test_bundle.js

@@ -1,0 +1,62 @@
+@import "compass/css3/font-face"
+ 
+@font-face
+  font-family: 'zocial'
+  src: url('../fonts/zocial-regular-webfont.woff') format('woff')
+  font-style: normal
+  font-weight: normal
+  src: url('../fonts/zocial-regular-webfont.eot')
+  src: url('../fonts/zocial-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/zocial-regular-webfont.woff') format('woff'), url('../fonts/zocial-regular-webfont.ttf') format('truetype'), url('../fonts/zocial-regular-webfont.svg#ZocialRegular') format('svg')
+
+body
+  line-height: 1
+  font-family: 'Muli', sans-serif
+  font-size: 100%
+  -webkit-font-smoothing: antialised
+  background: #111111
+  color: #777777
+  p
+    font-size: 1em
+    line-height: 1.5em
+  .icon_links
+    display: inline-block
+    font-family: 'zocial'
+    font-size: 2em
+    color: #777777
+  a
+    text-decoration: none
+    &:focus
+      text-decoration: underline
+    &:hover
+      color: red
+    
+.icon, .twitter, .linkedin, .github, .email
+  display: inline-block
+  cursor: pointer
+  color: #777777
+  margin-right: 20px
+  font-family: 'zocial', Arial, sans-serif
+  &:last-child
+    margin: 0
+  span
+    font-size: 0
+
+.site_container
+  position: absolute
+  line-height: 1.5em
+  left: 50%
+  top: 25%
+  width: 960px
+  color: #444444
+  text-align: center
+  margin-left: -480px
+  h1
+    font-size: 5em
+    
+.portrait
+  width: 20%
+  height: auto
+  
+::selection
+  background: #f6efad
+  color: #444444
