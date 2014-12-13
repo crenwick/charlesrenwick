@@ -1,3 +1,3 @@
 'use strict';
 
-var test = 1;
+console.log('Hey, my name is Charles');

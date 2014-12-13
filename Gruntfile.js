@@ -19,7 +19,8 @@ module.exports = function(grunt) {
       app: ['app'],
       sass: ['<%= project.app %>/sass/style.sass'],
       css: ['<%= project.app %>/css/**/*.css'],
-      alljs: ['<%= project.app %>/js/**/*.jsx']
+      alljs: ['<%= project.app %>/js/**/*.js'],
+      alljsx: ['<%= project.app %>/js/**/*.jsx']
     },
 
     wiredep: {
@@ -41,7 +42,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'app/',
-        src: ['*.html', 'fonts/*.**', '<%= project.css %>','<%= project.app %>/css/*.css.map'],
+        src: ['*.html', 'fonts/*.**', 'images/*.**', '<%= project.css %>','<%= project.app %>/css/*.css.map'],
         dest: 'build/',
         filter: 'isFile'
       }
