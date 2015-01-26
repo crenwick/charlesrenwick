@@ -151,7 +151,8 @@ module.exports = function(grunt) {
     }
   }); //end initConfig
 
-  grunt.registerTask('build', ['clean:dev', 'sass:dev', 'browserify:dev', 'copy:dev']);
+  grunt.registerTask('test', ['jshint', 'jscs']);
+  grunt.registerTask('build', ['test', 'clean:dev', 'sass:dev', 'browserify:dev', 'copy:dev']);
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('serve', ['build:dev', 'express:dev', 'watch']);
 };
