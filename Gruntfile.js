@@ -13,6 +13,20 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wiredep');
 
   grunt.initConfig({
+    jshint: {
+      all: ['<%= project.alljs %>', 'Gruntfile.js', 'server.js'],
+      options: {
+        jshintrc: '.jshintrc'
+      }
+    },
+
+    jscs: {
+      src: ['<%= project.alljs %>', 'server.js', 'Gruntfile.js'],
+      options: {
+        config: '.jscsrc'
+      }
+    },
+
     pkg: grunt.file.readJSON('package.json'),
 
     project: {
@@ -42,30 +56,16 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'app/',
-        src: ['*.html', 'fonts/*.**', 'images/*.**', '<%= project.css %>','<%= project.app %>/css/*.css.map'],
+        src: ['*.html', 'fonts/*.**', 'images/*.**', '<%= project.css %>', '<%= project.app %>/css/*.css.map'],
         dest: 'build/',
         filter: 'isFile'
-      }
-    },
-
-    jshint: {
-      all: ['<%= project.alljs %>','Gruntfile.js','server.js'],
-      options: {
-        jshintrc: true
-      }
-    },
-
-    jscs: {
-      src: ['<%= project.alljs %>','server.js','Gruntfile.js'],
-      options: {
-        config: '.jscsrc',
       }
     },
 
     browserify: {
       dev: {
         options: {
-          transform: [ ['reactify',{harmony:true}], 'debowerify'],
+          transform: [['reactify', {harmony:true}], 'debowerify'],
           debug: true
         },
         src: ['<%= project.alljs %>'],
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
       },
       frontEndTest: {
         options: {
-          transform: [ ['reactify',{harmony:true}], 'debeowerify'],
+          transform: [['reactify', {harmony:true}], 'debeowerify'],
           debug: true
         },
         src: ['test/front-end/**/*test.js'],
@@ -88,8 +88,8 @@ module.exports = function(grunt) {
       continuous: {
         configFile: 'karma.conf.js',
         singleRun: true,
-        browsers: [ 'PhantomJS' ]
-      },
+        browsers: ['PhantomJS']
+      }
     },
 
     sass: {
@@ -134,25 +134,24 @@ module.exports = function(grunt) {
         tasks: ['sass:dev']
       },
       express: {
-        files:  [ 'server.js', 'app/index.html' ],
-        tasks:  [ 'build', 'express:dev' ],
+        files:  ['server.js', 'app/index.html'],
+        tasks:  ['build', 'express:dev'],
         options: {
           spawn: false
         }
       },
       app: {
-        files: [ '<%= project.alljs %>' ],
-        tasks: [ 'browserify:dev' ]
+        files: ['<%= project.alljs %>'],
+        tasks: ['browserify:dev']
       },
       test: {
-        files: [ '<%= project.alljs %>', 'test/front-end/**/*.js'],
-        tasks: [ 'build:dev', 'browserify:frontEndTest', 'karma:unit']
+        files: ['<%= project.alljs %>', 'test/front-end/**/*.js'],
+        tasks: ['build:dev', 'browserify:frontEndTest', 'karma:unit']
       }
     }
   }); //end initConfig
 
   grunt.registerTask('build', ['clean:dev', 'sass:dev', 'browserify:dev', 'copy:dev']);
-  grunt.registerTask('default', ['build','watch']);
-  grunt.registerTask('serve', [ 'build:dev', 'express:dev', 'watch' ]);
-
+  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('serve', ['build:dev', 'express:dev', 'watch']);
 };
