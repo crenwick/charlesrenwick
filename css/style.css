@@ -1,0 +1,42 @@
+body {
+  line-height: 1;
+  font-family: "Muli", sans-serif;
+  -webkit-font-smoothing: antialised;
+  background: #111111;
+  color: #777777;
+}
+
+a {
+  color: #DEDEDE;
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: underline;
+}
+a:hover {
+  color: red;
+}
+
+.introduction {
+  font-size: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 640px;
+}
+.introduction h1 {
+  font-size: 75px;
+  margin-top: 200px;
+  margin-bottom: auto;
+  color: #ffffff;
+}
+.introduction p#title {
+  text-align: end;
+  margin-bottom: 80px;
+}
+.introduction p {
+  font-size: 1em;
+}
+.introduction .statement p {
+  margin-left: 20px;
+  font-weight: 300;
+}
