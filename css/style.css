@@ -50,22 +50,16 @@ main {
 }
 .intro {
   position: relative;
-  height: 83vh;
-  min-height: 410px;
+  height: 77vh;
+  min-height: 350px;
   display: flex;
   align-items: center;
 }
-/* @media (max-width: 768px) and (orientation: landscape) {
-      .intro {
-        height: 100vh; 
-      } 
-    }
-    @media (min-width: 768px) {
-      .intro {
-        height: 75vh;
-        min-height: 400px; 
-      } 
-   } */
+@media (min-width: 768px) {
+  .intro {
+    min-height: 475px;
+  }
+}
 .intro-meta {
   max-width: calc(100% - 2rem);
   margin: 0 auto;
@@ -119,10 +113,14 @@ main {
 @media (min-width: 769px) {
   .summary {
     width: 33rem;
-    padding: 1.5rem 0 1.5rem 0;
+    padding-top: 2rem;
     font-size: 21px;
     line-height: 1.3;
   }
+}
+.summary p {
+  font-size: inherit;
+  line-height: inherit;
 }
 .platforms {
   color: white;
@@ -292,8 +290,8 @@ main {
 }
 .other-projects {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 28rem;
   color: white;
   margin: 0 auto;
