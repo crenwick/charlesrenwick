@@ -255,39 +255,7 @@ main {
   top: 0px;
   left: 0px;
 }
-.poster {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 43;
-  opacity: 1;
-  transition: opacity 0.4s ease-in-out;
-  transform-style: preserve-3d;
-}
-.poster#poster-spyce {
-  background: url("../images/waking-up.jpg") center center / cover no-repeat;
-}
-.poster#poster-thesilverpost {
-  background: url("../images/thesilverpost.jpg") center center / cover no-repeat;
-}
-.poster#poster-grovegarden {
-  background: url("../images/grovegarden.png") center center / cover no-repeat;
-}
-.poster#poster-grovetower {
-  background: url("../images/grovetower.jpg") center center / cover no-repeat;
-}
-.poster#poster-heyyou {
-  background: url("../images/heyyou.jpg") center center / cover no-repeat;
-}
-.poster#poster-flybox {
-  background: url("../images/flybox.jpg") center center / cover no-repeat;
-}
-.poster#poster-appsauce {
-  background: url("../images/appsauce.jpg") center center / cover no-repeat;
-}
+
 .other-projects {
   text-align: center;
   padding-top: 1rem;
