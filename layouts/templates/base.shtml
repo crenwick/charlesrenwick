@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="title" content="Charles Renwick">
+    <title id="title" data-rh="true">
+      <super>
+      Charles Renwick
+    </title>
+    <!--
+     _____ _                _
+    /  __ \ |              | |
+    | /  \/ |__   __ _ _ __| | ___  ___
+    | |   | '_ \ / _` | '__| |/ _ \/ __|
+    | \__/\ | | | (_| | |  | |  __/\__ \
+     \____/_| |_|\__,_|_|  |_|\___||___/
+            ______                   _      _
+            | ___ \                 (_)    | |
+            | |_/ /___ _ ____      ___  ___| | __
+            |    // _ \ '_ \ \ /\ / / |/ __| |/ /
+            | |\ \  __/ | | \ V  V /| | (__|   <
+            \_| \_\___|_| |_|\_/\_/ |_|\___|_|\_\
+    -->
+
+    <meta name="author" content="Charles Renwick, Director of Software">
+    <meta name="description" content="$page.description.len().gt(0).then($page.description, 'Charles Renwick Blog')">
+    <meta
+      name="keywords"
+      content="Charles Renwick, Charles, charlesrenwick, Renwick, Software Engineer, Software"
+    >
+
+    <meta name="twitter:author" content="@CharlesRenwick">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@CharlesRenwick">
+    <meta name="twitter:description" content="$page.description.len().gt(0).then($page.description, 'Charles Renwick Blog')">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="@CharlesRenwick">
+    <meta name="twitter:title" content="$page.title">
+
+    <meta property="og:title" content="$page.title">
+    <meta property="og:type" content="website">
+    <meta property="og:image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="$site.asset('style.css').link()">
+
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦁</text></svg>">
+
+    <super>
+  </head>
+
+  <body>
+    <div id="content">
+      <super>
+    </div>
+
+    <div id="scripts">
+      <super>
+    </div>
+  </body>
+</html>

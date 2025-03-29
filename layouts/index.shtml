@@ -1,0 +1,121 @@
+<extend template="base.shtml">
+
+<title id="title"></title>
+<head id="head"></head>
+
+<div id="content" class="page">
+  <main id="main" class="main" role="main">
+    <article id="story theme-interactive theme-minimal">
+       <header class="intro">
+         <div class="intro-meta">
+           <h3
+             class="story-heading interactive-headline"
+             itemprop="headline"
+           >
+             Charles Renwick
+           </h3>
+           <div class="intro-meta-footer interactive-meta-footer">
+             <div class="summary">
+               <p class="balance-text">
+                 Director of Software of R&D at sweetgreen and co-founder of The Silver Post.
+               </p>
+               <p class="balance-text">
+                 I’m happiest when I’m smelling coffee or floating on a surfboard, but I can’t recall ever doing those things at the same time. I like working in food because when I think about the future, I get hungry.
+               </p>
+             </div>
+             <div class="platforms">
+               <p><a href="mailto:charles.srenwick@gmail.com">Email</a></p>
+               <p>
+                 <a
+                   href="https://www.linkedin.com/in/charlesrenwick"
+                   target="_blank"
+                   >LinkedIn</a
+                 >
+               </p>
+               <p>
+                 <a href="https://github.com/crenwick" target="_blank"
+                   >GitHub</a
+                 >
+               </p>
+               <p>
+                 <a href="https://twitter.com/charlesrenwick" target="_blank"
+                   >Twitter</a
+                 >
+               </p>
+             </div>
+           </div>
+          </div>
+       </header>
+
+      <div :loop="$page.custom.get('projects')">
+        <div class="project">
+          <figure class="looping-video">
+            <video
+              class="lazy-video"
+              data-reset="true"
+              loop=""
+              muted=""
+              playsinline=""
+              autoplay=""
+              poster="$site.asset($loop.it.get('poster')).link()"
+            >
+              <source
+                data-src="$site.asset($loop.it.get('video')).link()"
+                type="video/mp4"
+              >
+            </video>
+          </figure>
+
+          <div class="inner">
+            <a href="$loop.it.get('url')" target="_blank">
+              <h4>
+                <span :text="$loop.it.get('title')"></span>
+              </h4>
+              <h3>
+                <span :text="$loop.it.get('name')"></span>
+              </h3>
+              <p class="balance-text">
+                <span :text="$loop.it.get('text')"></span>
+              </p>
+              <p class="balance-text">
+                <span :text="$loop.it.getOr('subtext', '')"></span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="other-projects">
+        <p>
+          <span> Other Projects </span>
+        </p>
+
+        <div :loop="$page.custom.get('other_projects')">
+          <div>
+            <a
+              href="$loop.it.get('url')"
+              target="_blank"
+              :text="$loop.it.get('title')"
+              ></a>
+            <span :text="$loop.it.get('text')"></span>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+ <footer>
+   <p id="copyright">All Rights Reserved.</p>
+ </footer>
+</div>
+
+<div id="scripts">
+  <script src="$site.asset('js/lazyvideo.js').link()"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"></script>
+
+  <script>
+    balanceText();
+  </script>
+</div>

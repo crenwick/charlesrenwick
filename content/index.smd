@@ -1,0 +1,95 @@
+---
+.title = "Home",
+.date = @date("2025-02-01T00:00:00"),
+.description = "",
+.author = "Charles Renwick",
+.layout = "index.shtml",
+.draft = false,
+.custom = {
+  .projects = [
+    {
+      .title = "Director of Software R&D",
+      .name = "sweetgreen",
+      .text = "Robotic kitchen and five apps that quickly and perfectly assemble sweetgreen meals on demand.",
+      .subtext = "Featured in Time Magazine's 'Best Inventions of 2023'",
+
+      .poster = "images/sweetgreen-ik.jpg",
+      .video = "videos/sweetgreen-ik.mp4",
+      .url = "https://time.com/collection/best-inventions-2023/6324153/sweetgreen-infinite-kitchen/",
+    },
+    {
+      .title = "Co-Founder",
+      .name = "The Silver Post",
+      .text = "A monthly service enables members to send cheerful letters and photos to their grandparents by text an SMS bot every month.",
+
+      .poster = "images/thesilverpost.jpg",
+      .video = "videos/thesilverpost.mp4",
+      .url = "https://www.thesilverpost.com",
+    },
+    {
+      .title = "Director of Software & Product",
+      .name = "Spyce 'v2'",
+      .text = "Order with a kiosk or app to sear, steam, and assemble meals in minutes.",
+
+      .poster = "images/spyce-v2.jpg",
+      .video = "videos/infinitekitchen.mp4",
+      .url = "https://www.fastcompany.com/90569385/spyce-robotic-kitchen-reopening",
+    },
+    {
+      .title = "Lead Software Engineer",
+      .name = "Spyce 'v1'",
+      .text = "The world's first restaurant featuring a robotic kitchen that cooks complex meals to order.",
+
+      .poster = "images/waking-up.jpg",
+      .video = "videos/waking-up.mp4",
+      .url = "https://www.grubstreet.com/2018/05/video-spyce-restaurant-opens-in-boston-with-a-robot-kitchen.html",
+    },
+    {
+      .title = "",
+      .name = "The Grove Garden",
+      .text = "The Grove Garden gives anyone the power to grow edible plants inside their home, year round.",
+      .subtext = "The flagship app comes with an in-depth onboarding guide, video tutorials, and easy to use testing tools.",
+
+      .poster = "images/grovegarden.jpg",
+      .video = "videos/grovegarden.mp4",
+      .url = "https://www.kickstarter.com/projects/grove-ecosystem/grove-ecosystem-grow-fresh-food-in-your-home",
+    },
+    {
+      .title = "",
+      .name = "Grove Early-Adopter Tower",
+      .text = "Suite of mobile apps that allows customers to control their modular Groves in real time.",
+
+      .poster = "images/grovetower.jpg",
+      .video = "videos/grovetower.mp4",
+      .url = "https://www.bostonglobe.com/magazine/2015/04/11/somerville-grove-labs-wants-revolutionize-fresh-food/g4M3EqLuJhRl63OWNiP9wJ/story.html",
+    }
+  ],
+  .other_projects = [
+    {
+      .title = "Interactive Edition Textbooks",
+      .url = "https://www.amazon.com/gp/product/B00HQO0B4S",
+      .text = "Cross-platform reading experiences for Kindle Books on Fire Tablets, eReaders, and iOS/Android apps that integrated contextual media for educational textbooks."
+    },
+    {
+      .title = "Box Breathing",
+      .url = "https://github.com/crenwick/BoxBreathing",
+      .text = "A visual iOS widget based on a Navy SEAL breathing technique."
+    },
+    {
+      .title = "Hey You",
+      .url = "https://github.com/hey-you-project",
+      .text = "\"Missed connections\" social app for iOS."
+    },
+    {
+      .title = "Swiper",
+      .url = "https://github.com/crenwick/Swiper",
+      .text = "A series of bandit algorithms in Swift. Built with functional programming and immutable data structures."
+    },
+    {
+      .title = "App Sauce Co",
+      .url = "https://github.com/crenwick?utf8=%E2%9C%93&tab=repositories&q=Android",
+      .text = "Android apps with over 70,000 downloads."
+    }
+  ]
+}
+---
